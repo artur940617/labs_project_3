@@ -1,1 +1,2 @@
-# labs_project_3
+# TumoLabs JavaScript Project 3
+# Bank website
