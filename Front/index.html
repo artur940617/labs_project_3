@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3c944dc749.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <ul>
+          <li id="create_new_account">
+            <a class="cool-link"
+              ><i class="fa-solid fa-plus"></i> Create new Bank Account</a
+            >
+          </li>
+          <li id="addMoney">
+            <a class="cool-link"
+              ><i class="fa-solid fa-dollar-sign"></i> Add Money to account</a
+            >
+          </li>
+          <li>
+            <a class="cool-link" href="/transfer.html"
+              ><i class="fa-solid fa-money-bill-transfer"></i> transfer Money</a
+            >
+          </li>
+          <li>
+            <a class="cool-link" href="./delete.html"
+              ><i class="fa-solid fa-person-circle-minus"></i> delete bank
+              account</a
+            >
+          </li>
+        </ul>
+      </header>
+      <select id="sort" class="sort">
+        <option value="increase">increase</option>
+        <option value="decrease">decrease</option>
+      </select>
+      <div class="add-customer" id="add-customer">
+        <form id="form">
+          <input
+            type="text"
+            name="firstName"
+            id="add-firstName"
+            placeholder="FirstName"
+          />
+          <input
+            type="text"
+            name="firstName"
+            id="add-lastName"
+            placeholder="LastName"
+          />
+          <button type="submit" id="add">Create Customer</button>
+        </form>
+        <button id="close" class="close">X</button>
+      </div>
+      <div class="add-money" id="add-money">
+        <div class="i">
+          <input
+            type="text"
+            id="id_customer_for_add_money"
+            placeholder="enter customer id"
+          />
+          <input type="text" id="sumOfMoney" placeholder="enter sum of money" />
+        </div>
+        <button class="add_money" id="add_money">Add Money</button>
+        <button id="close_add_money" class="close_add_money">X</button>
+      </div>
+      <main>
+        <div class="all_customers" id="all_customers"></div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

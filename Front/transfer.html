@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3c944dc749.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li id="create_new_account">
+          <a class="cool-link" href="/"
+            ><i class="fa-solid fa-plus"></i> Create new Bank Account</a
+          >
+        </li>
+        <li id="addMoney">
+          <a class="cool-link" href="/"
+            ><i class="fa-solid fa-dollar-sign"></i> Add Money to account</a
+          >
+        </li>
+        <li>
+          <a class="cool-link" href="/transfer.html"
+            ><i class="fa-solid fa-money-bill-transfer"></i> transfer Money</a
+          >
+        </li>
+        <li>
+          <a class="cool-link" href="delete.html"
+            ><i class="fa-solid fa-person-circle-minus"></i> delete bank
+            account</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="transfer-money" id="transfer-money">
+      <div id="i" class="i">
+        <label for="money_from">from</label>
+        <input type="text" id="money_from" placeholder="enter customer id" />
+        <label for="money_to">to</label>
+        <input type="text" id="money_to" placeholder="enter customer id" />
+        <input
+          type="text"
+          id="sumOfTransferMoney"
+          placeholder="enter sum of money"
+        />
+      </div>
+      <a id="transfer_money" href="/">transfer Money</a>
+    </div>
+
+    <script src="transfer.js"></script>
+  </body>
+</html>
