@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3c944dc749.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li id="create_new_account">
+          <a class="cool-link" href="/"
+            ><i class="fa-solid fa-plus"></i> Create new Bank Account</a
+          >
+        </li>
+        <li id="addMoney">
+          <a class="cool-link" href="/"
+            ><i class="fa-solid fa-dollar-sign"></i> Add Money to account</a
+          >
+        </li>
+        <li>
+          <a class="cool-link" href="/transfer.html"
+            ><i class="fa-solid fa-money-bill-transfer"></i> transfer Money</a
+          >
+        </li>
+        <li>
+          <a class="cool-link" href="/delete.html"
+            ><i class="fa-solid fa-person-circle-minus"></i> delete bank
+            account</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="delete-account" id="delete-account">
+      <input type="text" id="delete-account_id" placeholder="enter id " />
+      <a id="delete_btn" href="/">Delete Account</a>
+    </div>
+
+    <script src="delete.js"></script>
+  </body>
+</html>
